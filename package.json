@@ -4,6 +4,7 @@
   "description": "A express Nodejs RESTful API written in ES-6, tested with mocha, chai, and chai-http with psql as the database for storage.",
   "main": "server.js",
   "scripts": {
+    "build": "babel server.js --out-dir build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
