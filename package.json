@@ -4,7 +4,8 @@
   "description": "A express Nodejs RESTful API written in ES-6, tested with mocha, chai, and chai-http with psql as the database for storage.",
   "main": "server.js",
   "scripts": {
-    "build": "babel server.js --out-dir build",
+    "build": "babel src/ --out-dir build",
+    "dev-start": "npm run build && nodemon build/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,6 +28,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "joi": "^14.3.1",
     "moment": "^2.24.0",
     "morgan": "^1.9.1",
     "uuid": "^3.3.2"
@@ -37,6 +39,8 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-watch": "^2.0.8",
-    "eslint": "^5.13.0"
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
   }
 }
