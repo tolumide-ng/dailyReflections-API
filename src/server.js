@@ -1,5 +1,6 @@
 import express from 'express';
 import morgan from 'morgan';
+import 'babel-polyfill';
 import bodyParser from 'body-parser';
 
 import reflectionRoutes from './routes/Reflection';

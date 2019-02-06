@@ -7,7 +7,7 @@ const joiValidation = {
       return res.status(400).json(result.error);
     }
     if (!req.value) { req.value = {}; }
-    req.value['body'] = result.value;
+    req.value.body = result.value;
     next();
   },
 
